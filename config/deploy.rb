@@ -29,7 +29,6 @@ namespace :deploy do
    end
 #   task :stop do ; end
    task :restart, :roles => :app, :except => { :no_release => true } do
-     run "bundle exec rake assets:precompile RAILS_ENV=production"
      run "touch #{File.join(current_path,'tmp','restart.txt')}"
    end
 end
