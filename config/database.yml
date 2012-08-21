@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: chirashi_production
   pool: 5
-  username: root
-  password:
-  socket: /var/run/mysqld/mysqld.sock
+  username: chirashi
+  password: Y6rK3ZDv9dlKF1N5
+  socket: /var/lib/mysql/mysql.sock
