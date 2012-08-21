@@ -1,5 +1,6 @@
 set :rvm_type, :system
 set :rvm_ruby_string, '1.9.2@twitter'
+require "rvm/capistrano"
 
 set :application, "chirashi"
 set :repository,  "git@github.com:HyahhaProgrammer/chirashi.git"
