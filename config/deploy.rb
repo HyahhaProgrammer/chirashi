@@ -1,5 +1,5 @@
 set :rvm_type, :system
-set :rvm_ruby_string, '1.9.2@rails-3.2'
+set :rvm_ruby_string, '1.9.2@twitter'
 
 set :application, "chirashi"
 set :repository,  "git@github.com:HyahhaProgrammer/chirashi.git"
