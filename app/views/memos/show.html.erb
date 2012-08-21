@@ -12,7 +12,8 @@
 
 <p>
   <b>Content:</b>
-  <%= @memo.content %>
+  <br />
+  <%=raw replace_uri(@memo.content.gsub(/\r\n|\r|\n/, "<br />")) %>
 </p>
 
 
