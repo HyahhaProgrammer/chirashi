@@ -13,8 +13,10 @@
 <p>
   <b>Content:</b>
   <br />
-  <#%=raw replace_uri(@memo.content.gsub(/\r\n|\r|\n/, "<br />")) %>
-  <%= replace_uri(@memo.content.gsub(/\r\n|\r|\n/, "<br />")) %>
+  <% html = replace_uri((h @memo.content).gsub(/\r\n|\r|\n/, "<br />")) %>
+  <%# safe_concat Sanitize.clean(html , :elements => ['a', 'br'], :attributes => {'a' => ['href', 'title', 'target'], 'br' => []})%>
+  <%#= replace_uri(@memo.content.gsub(/\r\n|\r|\n/, "<br />")) %>
+  <%= html.html_safe %>
 </p>
 
 
